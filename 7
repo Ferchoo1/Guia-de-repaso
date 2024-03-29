@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2, num3, max;
+
+    // Solicitar al usuario que ingrese los tres números
+    printf("Ingrese tres numeros separados por espacios: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    // Suponer que el primer número es el máximo
+    max = num1;
+
+    // Verificar si el segundo número es mayor que el máximo actual
+    if (num2 > max) {
+        max = num2;
+    }
+
+    // Verificar si el tercer número es mayor que el máximo actual
+    if (num3 > max) {
+        max = num3;
+    }
+
+    // Mostrar el número máximo
+    printf("El numero maximo es: %d\n", max);
+
+    return 0;
+}
