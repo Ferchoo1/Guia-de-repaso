@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int numero, contador = 0;
+
+    // Solicitar al usuario que ingrese el número
+    printf("Ingrese un numero entero: ");
+    scanf("%d", &numero);
+
+    // Contar el número de dígitos
+    while (numero != 0) {
+        numero /= 10; // Dividir el número por 10
+        contador++; // Incrementar el contador de dígitos
+    }
+
+    // Mostrar el número de dígitos
+    printf("El numero de digitos es: %d\n", contador);
+
+    return 0;
+}
